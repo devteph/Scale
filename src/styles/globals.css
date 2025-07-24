@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #0E0E0E;
+}
+
+body {
+  width: 100vw; 
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Geist', sans-serif;
+  color: #0E0E0E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input { 
+  display: block;
+  -webkit-appearance: none; 
+}
+
+input:-webkit-autofill {
+  color: #727A87 !important;
+  -webkit-text-fill-color: #727A87 !important;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #F5F5F5 inset !important;
+  -webkit-box-shadow: 0 0 0 1000px #F5F5F5 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+/* Oculta el ícono nativo en Chrome, Safari, Edge */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Oculta el ícono en Firefox */
+input[type="date"] {
+  -moz-appearance: textfield;
+}
+
+/* Oculta el ícono en Internet Explorer */
+input[type="date"]::-ms-clear {
+  display: none;
+}
+
+/* Oculta el ícono de cancelar en Chrome, Safari, Edge */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
