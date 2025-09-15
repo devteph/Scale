@@ -79,7 +79,7 @@ function Icon({
                   icon={icon}
                   className={`transparent cursor-pointer flex items-center ${iconSize}`}
                 />
-                <p className={`${classNameOption || 'text-gray-700  group-hover:text-black'} `}>{label}</p>
+                <p className={`${classNameOption || 'text-gray-700  group-hover:text-primary'} `}>{label}</p>
               </div>
             );
           })}

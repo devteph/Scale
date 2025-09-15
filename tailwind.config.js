@@ -33,7 +33,8 @@ module.exports = {
         'primary': '#0E0E0E',
         'secondary': '#AAA',
         'borders' : '#EEE',
-        'alert' : '#F01C00'
+        'alert' : '#F01C00',
+        'argent' : '#888'
       }
     },
   },

@@ -3,21 +3,22 @@ import React from 'react';
 import '@/styles/globals.css';
 import Head from 'next/head';
 import { ModalProvider } from 'styled-react-modal';
-// import { FadingBackground } from 'components/Layout/ThemeProvider';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Script from 'next/script';
 import localFont from 'next/font/local';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
-// const AeonikProMedium = localFont({
-//     src: [
-//       {
-//         path: '../public/fonts/AeonikPro-Medium/AeonikPro-Medium.woff2',
-//         weight: '500',
-//         style: 'normal',
-//       },
-//     ],
-//   })
+const Alliance = localFont({
+    src: [
+      {
+        path: '../../public/fonts/Alliance/AllianceNo2-Regular.woff2',
+        weight: '400',
+        style: 'normal',
+      },
+    ],
+  })
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -34,7 +35,7 @@ function MyApp({ Component, pageProps }) {
       {/* <ModalProvider backgroundComponent={FadingBackground}> */}
       <ModalProvider>
         {/* <html lang="en"className="!scroll-smooth"> */}
-          <main>
+        <main className={Alliance.className}>
             <Component {...pageProps} />
           </main>
         {/* </html> */}
@@ -45,12 +46,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-
-//This is the original version of the app
-// import App from 'next/app';
-// import "@/styles/globals.css";
-
-// export default function App({ Component, pageProps }) {
-//   return <Component {...pageProps} />;
-// }
-

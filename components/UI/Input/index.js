@@ -123,12 +123,12 @@ function Input({
     <div className={`w-full flex flex-col gap-y-5 wide:gap-y-7.5 ${wrapperClassName}`}>
       <div className="relative group">
           <input
-            className={`relative w-full h-14 px-4 text-16m text-black uppercase border-2 outline-none focus:border-transparent focus:ring-2 invalid:ring-alert placeholder:text-grey :fill-none transition-all duration-300
+            className={`relative w-full h-14 px-4 text-16m text-primary uppercase border-2 outline-none focus:border-transparent focus:ring-2 invalid:ring-alert placeholder:text-grey :fill-none transition-all duration-300
             ${inputClassName} 
-            ${alertText || validateWrap ? 'border-transparent ring-2 ring-alert' : 'border-inputs focus:ring-black'} 
+            ${alertText || validateWrap ? 'border-transparent ring-2 ring-alert' : 'border-inputs focus:ring-primary'} 
             ${validateText ? 'text-alert' : ''}
             ${iconToLeft ? 'pl-12' : ''}
-            ${currentValue ? 'focus:border-black focus:ring-black border-2' : ''}
+            ${currentValue ? 'focus:border-primary focus:ring-primary border-2' : ''}
             disabled:bg-secondary disabled:border-borders disabled:text-detail disabled:cursor-not-allowed
             `}
             placeholder={placeHolder}
@@ -163,7 +163,7 @@ function Input({
         {/* </div> */}
         {icon && (
           <Icon
-            className={`w-6 h-6 absolute bottom-0 -translate-y-1/2 icon text-grey group-focus-within:text-black flex justify-center items-center cursor-pointer
+            className={`w-6 h-6 absolute bottom-0 -translate-y-1/2 icon text-grey group-focus-within:text-primary flex justify-center items-center cursor-pointer
             ${iconToLeft ? 'left-3' : 'right-3.5'}`}
             icon={icon}
             onClick={() => {

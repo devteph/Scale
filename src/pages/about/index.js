@@ -19,7 +19,7 @@ function About({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar
+       <Navbar
         logo="white" 
         links="white" 
         type="primary"
@@ -28,10 +28,7 @@ function About({
         variant="HeroSecondary"
       />
       <TwoColumns/>
-      <ImageBackgroundText
-        imageSrc="/assets/imageBackground1.svg"
-        text1="Scale is redefining how datacenters are designed, built, and operated. We combine speed, precision, and long-term thinking to deliver infrastructure that grows with your ambition."
-      />
+      <ImageBackgroundText/>
       <Team/>
       <Footer/>
       </>

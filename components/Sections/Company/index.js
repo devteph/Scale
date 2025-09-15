@@ -2,7 +2,37 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 function Locations  ({ }) {
- 
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const target = entry.target;
+              if (entry.isIntersecting) {
+                target.classList.remove('text-secondary');
+                target.classList.add('text-primary');
+              } else {
+                target.classList.remove('text-primary');
+                target.classList.add('text-secondary');
+              }
+            });
+          },
+          {
+            threshold: 0.5,
+            rootMargin: '-50% 0px 10px 0px',
+          }
+        );
+      
+        paragraphsRef.current.forEach((el) => {
+          if (el) observer.observe(el);
+        });
+      
+        return () => {
+          paragraphsRef.current.forEach((el) => {
+            if (el) observer.unobserve(el);
+          });
+        };
+      }, []);
 
     return (
 
@@ -28,32 +58,46 @@ function Locations  ({ }) {
                     className='py-24 wide:pt-[25rem] wide:pb-[15rem] w-full flex flex-col gap-y-24 wide:gap-y-60'
                 >
                     <p
-                        className='text-30 text-secondary'
+                        ref={(el) => (paragraphsRef.current[0] = el)}
+                        className='text-30 wide:text-50 text-secondary'
                     >
-                        <span className='text-primary'>At the core of</span> 
-                        <span className='pl-2'>everything</span>
-                        <span className='wide:block'> Designed for speed. Built for uptime</span>
+                        <span className='text-primary'>Superior datacenters of wholesale megawatt power.</span> 
                     </p>
                     <p
+                        ref={(el) => (paragraphsRef.current[1] = el)}
                         className='text-30 text-secondary'
                     >
-                        <span>Purpose built hardware</span>
-                        <span> No noise.</span> No bloat. Just raw 
-                        <span> performance</span>
+                        <span>Engineered for elite performance, security, reliability and massive scale.</span>
                     </p>
                     <p
+                        ref={(el) => (paragraphsRef.current[2] = el)}
                         className='text-30 text-secondary'
                     >
-                        <span className='wide:block'>Optimized for Scale</span>  
-                        <span className='wide:block'> From single rack to hyperscale</span>
-                        <span className='wide:block'> deployment — instantly adaptable</span>
+                        <span>Keenly constructed and managed by talented experts.</span>
                     </p>
                     <p
+                        ref={(el) => (paragraphsRef.current[3] = el)}
                         className='text-30 text-secondary'
                     >
-                        <span className='wide:block'>Power, secure, and reliability. All in a </span>
-                        <span className='wide:block'> system you’ll never have to second</span>
-                        <span className='wide:block'> guess</span>
+                        <span>Future-built for rapid deployment, growth and cost limitations.</span>
+                    </p>
+                    <p
+                        ref={(el) => (paragraphsRef.current[4] = el)}
+                        className='text-30 text-secondary'
+                    >
+                        <span>Outfitted with the latest processing technology.</span>
+                    </p>
+                    <p
+                        ref={(el) => (paragraphsRef.current[5] = el)}
+                        className='text-30 text-secondary'
+                    >
+                        <span>Positioned at the forefront of liquid cooling.</span>
+                    </p>
+                    <p
+                        ref={(el) => (paragraphsRef.current[6] = el)}
+                        className='text-30 text-secondary'
+                    >
+                        <span>Serving the Fortune 500, 100, and even 10.</span>
                     </p>
                 </div>
             </div>

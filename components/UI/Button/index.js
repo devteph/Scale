@@ -24,10 +24,13 @@ function Button({
   let typeClass = '';
   switch (type) {
     case 'primary':
-      typeClass = `px-4 w-fit h-10 block items-center justify-center whitespace-nowrap text-16 text-white border border-white hover:bg-black hover:border-black transition-all duration-300`;
+      typeClass = `px-4 w-fit h-10 block flex items-center justify-center whitespace-nowrap text-16 text-white border border-white hover:bg-white hover:text-secondary transition-all duration-300`;
       break;
     case 'secondary':
-      typeClass = `px-4 w-fit h-10 block items-center justify-center whitespace-nowrap text-16 border border-black hover:text-white hover:bg-black hover:border-black transition-all duration-300`;
+      typeClass = `px-4 w-fit h-10 block flex items-center justify-center whitespace-nowrap text-16 border border-primary hover:text-white hover:bg-primary hover:border-primary transition-all duration-300`;
+      break;
+    case 'tertiary':
+      typeClass = `px-4 w-fit h-13 block flex items-center justify-center whitespace-nowrap text-16 text-white bg-primary hover:opacity-80 transition-all duration-300`;
       break;
   }
 

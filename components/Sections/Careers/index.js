@@ -28,29 +28,20 @@ function Careers  ({ }) {
                 className='wide:col-start-7 col-span-5'
             >
                 <div
-                    className='h-full wide:pt-10 wide:pb-20 flex flex-col justify-between gap-y-10 wide:gap-y-0'
+                    className='h-full wide:py-10 flex flex-col justify-center gap-y-7.5 wide:gap-y-10'
                 >
                     <h3
                         className='text-30 wide:text-50'
                     >
-                        Built for what’s next
+                        Intelligence and expertise are central to everything we do.
                    </h3>
-                   <div
-                        className='flex flex-col gap-y-10'
-                   >
-                        <p
-                            className='text-16 wide:text-18'
-                        >
-                            Scale is redefining how datacenters are designed, built, and operated. We combine speed, precision, and long-term thinking to deliver infrastructure that grows with your ambition.
-                        </p>
-                        <Button
-                            type='secondary'
-                            label={'About'}
-                            onClick={() => {
-                                navigateTo('/about');
-                            }}
-                        />
-                    </div>
+                    <Button
+                        type='secondary'
+                        label={'About'}
+                        onClick={() => {
+                            navigateTo('/about');
+                        }}
+                    /> 
                 </div>
             </div>
         </section>

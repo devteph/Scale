@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 export function Hero({ variant = 'HeroPrimary' }) {
-    const imageSrc = variant === 'HeroSecondary'
-      ? '/assets/hero2.svg'
-      : '/assets/hero.svg';
+    const imageSrc = variant === 'HeroPrimary'
+      ? '/assets/hero.svg'
+      : '/assets/hero2.svg';
   
-    const text = variant === 'HeroSecondary'
-      ? 'Moving humanity forward through innovation.'
-      : 'AI Infrastructure Powered by Clean Energy';
+    const text = variant === 'HeroPrimary'
+      ? 'Accelerate your digital ascension.'
+      : 'Build to scale with you.';
  
   return (
     <div className="w-full h-screen relative">
@@ -22,7 +22,7 @@ export function Hero({ variant = 'HeroPrimary' }) {
         />
         <div
             className={`absolute bottom-7.5 wide:bottom-10 left-7.5 wide:left-10 z-20'
-                ${variant === 'HeroSecondary' ? 'max-w-[20rem] wide:max-w-[20.95rem]' : 'max-w-[20rem] wide:max-w-[38rem]'}`}
+                ${variant === 'HeroSecondary' ? 'max-w-[20rem] wide:max-w-[20.95rem]' : 'max-w-[20rem] wide:max-w-[30rem]'}`}
         >
             <h1
                 className={`text-white 

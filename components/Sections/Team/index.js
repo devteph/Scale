@@ -11,7 +11,16 @@ function Team ({ }) {
             className='py-14 px-7.5 wide:px-10 wide:py-40 grid grid-cols-5 wide:grid-cols-12 gap-x-7.5 gap-x-7.5 wide:gap-x-10'
         >
             <div
-                className='col-span-5 wide:col-span-6'
+                className='wide:col-start-7 col-span-5 pb-10 wide:pb-28'
+            >
+                <h1
+                    className='text-24 wide:text-30'
+                >
+                    Our team combines decades of leadership and business acumen, with long-term vision and future thinking.
+                </h1>
+            </div>
+            <div
+                className='col-span-5 wide:col-span-6 h-full flex items-center'
             >
                 <div
                     className='text-24 wide:text-30'
@@ -24,121 +33,126 @@ function Team ({ }) {
                 </div>
             </div>
             <div
-                className='wide:col-start-7 col-span-5 wide:col-span-6'
+                className='col-span-6 grid grid-cols-5 wide:grid-cols-6 gap-x-7.5 gap-x-7.5 wide:gap-x-10'
             >
+                
                 <div
-                    className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
+                    className='wide:col-start-1 col-span-5 wide:col-span-6'
                 >
-                    <h1
-                        className='text-18'
-                    >
-                       Neal Rickner
-                    </h1>
                     <div
-                        className='flex justify-end wide:justify-between text-end wide:text-start'
+                        className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
                     >
-                        <p
-                            className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
+                        <h1
+                            className='text-18'
                         >
-                            CEO
-                        </p>
-                        <ButtonIcon
-                            className={`wide:group-hover:flex hidden transition-all duration-500`}
-                            icon='arrow_outward'
-                            variant='secondary'
-                        />
+                        Neal Rickner
+                        </h1>
+                        <div
+                            className='flex justify-end wide:justify-between text-end wide:text-start'
+                        >
+                            <p
+                                className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
+                            >
+                                CEO
+                            </p>
+                            <ButtonIcon
+                                className={`wide:group-hover:flex hidden transition-all duration-500`}
+                                icon='arrow_outward'
+                                variant='secondary'
+                            />
+                        </div>
+                    </div> 
+                    <div
+                        className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
+                    >
+                        <h1
+                            className='text-18'
+                        >
+                        Andrew Street
+                        </h1>
+                        <div
+                            className='flex justify-end wide:justify-between'
+                        >
+                            <p
+                                className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
+                            >
+                                CTO
+                            </p>
+                            <ButtonIcon
+                                className={`wide:group-hover:flex hidden transition-all duration-500`}
+                                icon='arrow_outward'
+                                variant='secondary'
+                            />
+                        </div>
+                    </div> 
+                    <div
+                        className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
+                    >
+                        <h1
+                            className='text-18'
+                        >
+                        Troy Follak
+                        </h1>
+                        <div
+                            className='flex justify-end wide:justify-between text-end wide:text-start'
+                        >
+                            <p
+                                className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
+                            >
+                                Chief Product Office
+                            </p>
+                            <ButtonIcon
+                                className={`wide:group-hover:flex hidden transition-all duration-500`}
+                                icon='arrow_outward'
+                                variant='secondary'
+                            />
+                        </div>
                     </div>
-                </div> 
-                <div
-                    className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
-                >
-                    <h1
-                        className='text-18'
-                    >
-                       Andrew Street
-                    </h1>
                     <div
-                        className='flex justify-end wide:justify-between'
+                        className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
                     >
-                        <p
-                            className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
+                        <h1
+                            className='text-18'
                         >
-                            CTO
-                        </p>
-                        <ButtonIcon
-                            className={`wide:group-hover:flex hidden transition-all duration-500`}
-                            icon='arrow_outward'
-                            variant='secondary'
-                        />
-                    </div>
-                </div> 
-                <div
-                    className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
-                >
-                    <h1
-                        className='text-18'
-                    >
-                       Troy Follak
-                    </h1>
+                        Frank Weigand
+                        </h1>
+                        <div
+                            className='flex justify-end wide:justify-between text-end wide:text-start'
+                        >
+                            <p
+                                className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
+                            >
+                                mechanical engineer
+                            </p>
+                            <ButtonIcon
+                                className={`wide:group-hover:flex hidden transition-all duration-500`}
+                                icon='arrow_outward'
+                                variant='secondary'
+                            />
+                        </div>
+                    </div> 
                     <div
-                        className='flex justify-end wide:justify-between text-end wide:text-start'
+                        className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
                     >
-                        <p
-                            className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
+                        <h1
+                            className='text-18'
                         >
-                            Chief Product Office
-                        </p>
-                        <ButtonIcon
-                            className={`wide:group-hover:flex hidden transition-all duration-500`}
-                            icon='arrow_outward'
-                            variant='secondary'
-                        />
-                    </div>
-                </div>
-                <div
-                    className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
-                >
-                    <h1
-                        className='text-18'
-                    >
-                       Frank Weigand
-                    </h1>
-                    <div
-                        className='flex justify-end wide:justify-between text-end wide:text-start'
-                    >
-                        <p
-                            className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
+                        Bill Erdman
+                        </h1>
+                        <div
+                            className='flex justify-end wide:justify-between text-end wide:text-start'
                         >
-                            mechanical engineer
-                        </p>
-                        <ButtonIcon
-                            className={`wide:group-hover:flex hidden transition-all duration-500`}
-                            icon='arrow_outward'
-                            variant='secondary'
-                        />
-                    </div>
-                </div> 
-                <div
-                    className='group pt-10 pb-5 grid grid-cols-2 gap-7.5 wide:gap-10 border-b border-borders cursor-pointer transition-all duration-500'
-                >
-                    <h1
-                        className='text-18'
-                    >
-                       Bill Erdman
-                    </h1>
-                    <div
-                        className='flex justify-end wide:justify-between text-end wide:text-start'
-                    >
-                        <p
-                            className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
-                        >
-                            Electrical Engineer
-                        </p>
-                        <ButtonIcon
-                            className={`wide:group-hover:flex hidden transition-all duration-500`}
-                            icon='arrow_outward'
-                            variant='secondary'
-                        />
+                            <p
+                                className='text-14 wide:text-13 opacity-50 group-hover:opacity-100 uppercase'
+                            >
+                                Electrical Engineer
+                            </p>
+                            <ButtonIcon
+                                className={`wide:group-hover:flex hidden transition-all duration-500`}
+                                icon='arrow_outward'
+                                variant='secondary'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

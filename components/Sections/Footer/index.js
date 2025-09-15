@@ -94,15 +94,12 @@ export function Footer({
       <div
         className='pt-5 wide:pt-0 col-span-5 wide:col-start-7 wide:col-span-6'
       >
-        <ul className="flex flex-col space-y-5">
+        <ul className="relative flex flex-col space-y-5">
           <li>
-            <Link href="/" className="text-24 wide:text-40 hover:opacity-60 transition-all duration-300">Company</Link>
+            <Link href="/" className="text-24 wide:text-40 hover:opacity-60 transition-all duration-300">Home</Link>
           </li>
           <li>
-            <Link href="/locations" className="text-24 wide:text-40 hover:opacity-60 transition-all duration-300">Locations</Link>
-          </li>
-          <li>
-            <Link href="/" className="text-24 wide:text-40 hover:opacity-60 transition-all duration-300">Careers</Link>
+            <Link href="/about" className="text-24 wide:text-40 hover:opacity-60 transition-all duration-300">About</Link>
           </li>
           <li>
             <Link href="/contact" className="text-24 wide:text-40 hover:opacity-60 transition-all duration-300">Contact</Link>
@@ -129,21 +126,12 @@ export function Footer({
        </p>
       </div>
       <div
-        className='col-span-2 wide:col-span-4 col-start-4 wide:col-start-7 flex justify-end wide:justify-start'
+        className='flex col-start-4 wide:col-start-7 col-span-2 wide:col-span-6 justify-end'
       >
        <p 
           className='text-12 wide:text-14 opacity-50'
         >
           Made in America
-       </p>
-      </div>
-      <div
-        className='hidden wide:flex col-start-11 col-span-2 justify-end'
-      >
-       <p 
-          className='opacity-50'
-        >
-          189.175.58.6
        </p>
       </div>
      

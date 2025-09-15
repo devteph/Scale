@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Navbar from 'components/Sections/Navbar';
 import Hero from 'components/Sections/Hero';
 import Image from 'next/image';
-import Locations from 'components/Sections/Locations';
+import SliderLocations from 'components/Sections/SliderLocations';
 import Company from 'components/Sections/Company';
 import Careers from 'components/Sections/Careers'
 import Footer from 'components/Sections/Footer';
@@ -25,7 +25,7 @@ function Home({ }) {
       />
       <Hero/>
       <Company/>
-      <Locations/>
+      <SliderLocations/>
       <Careers/>
       <Footer/>
       </>
