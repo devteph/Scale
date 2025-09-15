@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 function Locations  ({ }) {
+    const paragraphsRef = useRef([]);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
