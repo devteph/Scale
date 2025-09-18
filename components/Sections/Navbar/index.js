@@ -29,9 +29,9 @@ const Navbar = ({
   };
 
   return (
-    <div className={`z-20 relative transition-colors duration-300`}>
+    <div className={`z-40 relative transition-colors duration-300`}>
       <div
-        className={`absolute top-0 left-0 py-7.5 px-7.5 wide:px-10 wide:py-0 w-full z-20 ${openMenu
+        className={`absolute top-0 left-0 py-7.5 px-7.5 wide:px-10 wide:py-0 w-full z-40 ${openMenu
           ? '!fixed !h-screen p-7.5 flex flex-col justify-between bg-white'
           : 'h-6 wide:h-28 grid grid-cols-5 wide:grid-cols-12 gap-7.5 wide:gap-10 flex items-center'}`}
       >

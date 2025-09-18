@@ -41,10 +41,10 @@ const SliderLocations = forwardRef((props, ref) => {
         >
           <Image
             src={'/assets/scale-1.png'}
-            alt="Logo"
-            width={165}
-            height={30}
-            className="object-cover w-full h-full"
+            alt="Location1"
+            width={1500} 
+            height={'900'}
+            className="object-cover h-full w-full"
           />
         </div>
         <div 
@@ -52,10 +52,10 @@ const SliderLocations = forwardRef((props, ref) => {
         >
           <Image
             src={'/assets/scale-2.png'}
-            alt="Logo"
-            width={165}
-            height={30}
-            className="object-cover w-full h-full"
+            alt="Location2"
+            width={1500} 
+            height={'900'}
+            className="object-cover h-full w-full"
           />
         </div>
       </Slider>

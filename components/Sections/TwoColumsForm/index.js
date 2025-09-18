@@ -44,7 +44,7 @@ function TwoColumnsForm ({ }) {
                         placeHolder="Name"
                     />
                     <div
-                        className='grid grid-cols-2 gap-x-5'
+                        className='grid grid-cols-1 wide:grid-cols-2 gap-5'
                     >
                         <Input
                             placeHolder="First Name"
