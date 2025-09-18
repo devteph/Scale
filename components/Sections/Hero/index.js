@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, forwardRef } from 'react';
 import Image from 'next/image';
 
-export function Hero({ variant = 'HeroPrimary' }) {
+const Hero = forwardRef(({ variant = 'HeroPrimary' }, ref) => {
     const imageSrc = variant === 'HeroPrimary'
       ? '/assets/hero.svg'
       : '/assets/hero2.svg';
@@ -11,7 +11,10 @@ export function Hero({ variant = 'HeroPrimary' }) {
       : 'Build to scale with you.';
  
   return (
-    <div className="w-full h-screen relative">
+    <section 
+        ref={ref}
+        className="w-full h-screen relative"
+    >
         <Image
             src={imageSrc}
             alt="Logo"
@@ -31,8 +34,8 @@ export function Hero({ variant = 'HeroPrimary' }) {
                  {text}
             </h1>
         </div>
-    </div>
+    </section>
 );
-    }
+});
 
 export default Hero;

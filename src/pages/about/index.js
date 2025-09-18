@@ -5,7 +5,6 @@ import Hero from 'components/Sections/Hero'
 import Footer from 'components/Sections/Footer';
 import TwoColumns from 'components/Sections/TwoColums';
 import ImageBackgroundText from 'components/Sections/ImageBackgroundText';
-import Team from 'components/Sections/Team';
 
 function About({
  
@@ -29,7 +28,6 @@ function About({
       />
       <TwoColumns/>
       <ImageBackgroundText/>
-      <Team/>
       <Footer/>
       </>
   );

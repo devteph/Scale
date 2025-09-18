@@ -35,13 +35,13 @@ function Careers  ({ }) {
                     >
                         Intelligence and expertise are central to everything we do.
                    </h3>
-                    <Button
+                    {/* <Button
                         type='secondary'
                         label={'About'}
                         onClick={() => {
                             navigateTo('/about');
                         }}
-                    /> 
+                    />  */}
                 </div>
             </div>
         </section>

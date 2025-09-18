@@ -80,7 +80,7 @@ const Navbar = ({
                 Home
               </button>
             </li>
-            <li className={`${openMenu ? 'py-5 border-t border-borders' : ''}`}>
+            {/* <li className={`${openMenu ? 'py-5 border-t border-borders' : ''}`}>
               <button
                 onClick={() => handleLinkClick('/about')}
                 className={`text-left text-16 hover:opacity-60 transition-all duration-300 
@@ -88,7 +88,7 @@ const Navbar = ({
               >
                 About
               </button>
-            </li>
+            </li> */}
           </ul>
 
           {/* Botón */}

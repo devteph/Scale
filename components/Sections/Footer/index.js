@@ -2,7 +2,17 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { navigateTo } from "components/Layout/ThemeProvider";
 import Link from 'next/link';
-import Button from 'components/UI/Button';
+import localFont from 'next/font/local';
+
+const Roboto = localFont({
+  src: [
+    {
+      path: '../../../public/fonts/Roboto/RobotoMono-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+})
 
 export function Footer({
 }) {
@@ -30,12 +40,12 @@ export function Footer({
             className='col-start-3 col-span-3'
           >
             <p
-              className='text-12 wide:text-14 opacity-50 uppercase'
+              className={`text-12 wide:text-14 opacity-50 uppercase ${Roboto.className}`}
             >
               info@scaledatacenters.com
             </p>
             <p
-              className='text-12 wide:text-14 opacity-50'
+              className={`text-12 wide:text-14 opacity-50 ${Roboto.className}`}
             >
               888-639-5838
             </p>
@@ -57,12 +67,12 @@ export function Footer({
             className='col-start-3 col-span-3'
           >
             <p
-              className='text-12 wide:text-14 opacity-50 uppercase'
+              className={`text-12 wide:text-14 opacity-50 uppercase ${Roboto.className}`}
             >
               3838 Oak Lawn Ave Ste 1000
             </p>
             <p
-              className='text-12 wide:text-14 opacity-50'
+              className={`text-12 wide:text-14 opacity-50 uppercase ${Roboto.className}`}
             >
               Dallas, TX 75219
             </p>
@@ -84,7 +94,7 @@ export function Footer({
             className='col-start-3 col-span-3'
           >
             <p
-              className='text-12 wide:text-14 opacity-50 uppercase'
+              className={`text-12 wide:text-14 opacity-50 uppercase ${Roboto.className}`}
             >
               LinkedIn
             </p>
@@ -98,15 +108,15 @@ export function Footer({
           <li>
             <Link href="/" className="text-24 wide:text-40 hover:opacity-60 transition-all duration-300">Home</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/about" className="text-24 wide:text-40 hover:opacity-60 transition-all duration-300">About</Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/contact" className="text-24 wide:text-40 hover:opacity-60 transition-all duration-300">Contact</Link>
           </li>
         </ul>
       </div>
-      <div className="mt-10 wide:mt-60 h-auto wide:h-40 w-full col-span-5 wide:col-span-12 flex justify-center">
+      <div className="mt-10 wide:mt-60 h-auto 2xl:min-h-40 w-full col-span-5 wide:col-span-12 flex justify-center">
         <Image
           src={'/assets/logo-footer.svg'}
           alt="Logo"

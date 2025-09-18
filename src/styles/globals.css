@@ -86,7 +86,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .slider-locations .slick-dots li {
-  grid-column: span 4 !important;
+  grid-column: span 6 !important;
   height: 4px !important;
   width: 100% !important;
   margin: 0 !important;

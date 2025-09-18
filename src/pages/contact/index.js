@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Navbar from 'components/Sections/Navbar';
 import Footer from 'components/Sections/Footer';
 import TwoColumnsForm from 'components/Sections/TwoColumsForm';
+import ScrollButton from 'components/Sections/ScrollButton'
 
 function Contact({
  
@@ -20,6 +21,7 @@ function Contact({
         variant="primary" 
         logo="black"
       />
+      <ScrollButton/>
       <TwoColumnsForm/>
       <Footer/>
       </>

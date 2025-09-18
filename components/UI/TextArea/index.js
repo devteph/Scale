@@ -2,16 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import localFont from 'next/font/local';
 
-
-// const AeonikProRegular = localFont({
-//   src: [
-//     {
-//       path: '../../../public/fonts/AeonikPro-Regular/AeonikPro-Regular.woff2',
-//       weight: '400',
-//       style: 'normal',
-//     },
-//   ],
-// })
+const Roboto = localFont({
+  src: [
+    {
+      path: '../../../public/fonts/Roboto/RobotoMono-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+})
 
 function TextArea(
   {
@@ -37,7 +36,7 @@ function TextArea(
         <div className='absolute top-0 right-0'>{maxLength}</div>
         <textarea
           className={`relative w-full h-28 p-4 text-16m text-primary uppercase border-2 outline-none focus:border-transparent focus:ring-2 invalid:ring-alert placeholder:text-grey :fill-none transition-all duration-300 resize-none
-            ${alertText || validateWrap ? 'border-transparent ring-2 ring-alert' : 'border-inputs focus:ring-primary'} 
+            ${Roboto.className} ${alertText || validateWrap ? 'border-transparent ring-2 ring-alert' : 'border-inputs focus:ring-primary'} 
             ${validateText ? 'text-alert' : ''}
             ${currentValue ? 'focus:border-primary focus:ring-primary border-2' : ''}
             disabled:bg-secondary disabled:border-borders disabled:text-detail disabled:cursor-not-allowed

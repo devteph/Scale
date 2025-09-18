@@ -3,7 +3,17 @@ import PropTypes from 'prop-types';
 import Icon from '../Icon';
 import Tags from '@yaireo/tagify/dist/react.tagify';
 import '@yaireo/tagify/dist/tagify.css';
-// import notify from '/utils/notify';
+import localFont from 'next/font/local';
+
+const Roboto = localFont({
+  src: [
+    {
+      path: '../../../public/fonts/Roboto/RobotoMono-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+})
 
 function Input({
   label,
@@ -124,7 +134,7 @@ function Input({
       <div className="relative group">
           <input
             className={`relative w-full h-14 px-4 text-16m text-primary uppercase border-2 outline-none focus:border-transparent focus:ring-2 invalid:ring-alert placeholder:text-grey :fill-none transition-all duration-300
-            ${inputClassName} 
+            ${Roboto.className} ${inputClassName} 
             ${alertText || validateWrap ? 'border-transparent ring-2 ring-alert' : 'border-inputs focus:ring-primary'} 
             ${validateText ? 'text-alert' : ''}
             ${iconToLeft ? 'pl-12' : ''}

@@ -55,19 +55,16 @@ export default function RightColumnContent() {
         <div className="wide:col-start-7 col-span-5">
             <div className="wide:pb-20 space-y-5 wide:space-y-10">
                 <p
-                  ref={(el) => (paragraphsRef.current[0] = el)}
                   className="text-24 wide:text-30 transition-colors duration-500"
                 >
                   At Scale Datacenters, we specialize in high-performance hyperscale data center infrastructure for wholesale, enterprise-level clients. Optimized for the most demanding workloads, including AI, machine learning, and cloud-native applications.
                 </p>
                 <p
-                  ref={(el) => (paragraphsRef.current[1] = el)}
                   className="text-24 wide:text-30 transition-colors duration-500"
                 >
                   Our world-class facilities are engineered for maximum density, energy efficiency and modular scalability. Enabling rapid deployment and seamless expansion.
                 </p>
                 <p
-                  ref={(el) => (paragraphsRef.current[2] = el)}
                   className="text-24 wide:text-30 transition-colors duration-500"
                 >
                   With robust connectivity, industry-leading PUE metrics, and a focus on renewable energy integration, we provide mission-critical environments that meet and exceed the requirements of today’s top-tier hyperscalers and digital enterprises.
