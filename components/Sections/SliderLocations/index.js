@@ -82,15 +82,15 @@ const SliderLocations = forwardRef((props, ref) => {
       >
       
         <div 
-          className='h-screen p-7.5 wide:py-20 wide:px-10 grid grid-rows-1 wide:grid-cols-12 gap-x-7.5 wide:gap-x-10 flex items-end wide:items-end'
+          className='h-screen p-7.5 wide:py-20 wide:px-10 grid grid-cols-2 wide:grid-cols-12 gap-x-7.5 wide:gap-x-10 flex items-end'
         >
           
           {/* Slide 1 */}
           <div 
-              className={`col-start-1 col-span-5 wide:col-span-6 ${currentSlide === 0 ? 'grid' : 'hidden wide:grid'}`}
+              className={`col-start-1 col-span-1 wide:col-span-6 h-32 flex items-start`}
           >
             <div 
-                className={`pt-5 flex flex-col gap-y-3.7 wide:gap-y-5`}
+                className={`flex flex-col gap-y-3.7 wide:gap-y-5`}
             >
                 <h3 
                     className={`text-24 wide:text-30 text-white`}
@@ -108,10 +108,10 @@ const SliderLocations = forwardRef((props, ref) => {
 
           {/* Slide 2*/}
           <div 
-              className={`col-start-1 col-span-5 wide:col-span-6 ${currentSlide === 1 ? 'grid' : 'hidden wide:grid'}`}
+              className={`col-start-2 col-span-1 wide:col-span-6 h-32 flex items-start`}
           >
             <div 
-                className={`pt-5 flex flex-col gap-y-3.7 wide:gap-y-5`}
+                className={`flex flex-col gap-y-3.7 wide:gap-y-5`}
             >
                 <h3 
                     className={`text-24 wide:text-30 text-white`}

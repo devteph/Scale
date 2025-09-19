@@ -19,7 +19,7 @@ export function Footer({
  
   return (
     <div 
-      className="px-7.5 wide:px-10 py-10 wide:pt-20 grid grid-cols-5 wide:grid-cols-12 gap-7.5 wide:gap-10"
+      className="px-7.5 wide:px-10 pt-10 pb-20 wide:pt-20 wide:pb-10 grid grid-cols-5 wide:grid-cols-12 gap-7.5 wide:gap-10"
     >
       <div
         className='col-span-5 wide:col-start-1 wide:col-span-6 space-y-5 wide:space-y-10'
@@ -60,7 +60,7 @@ export function Footer({
             <h3
               className='text-14 wide:text-18'
             >
-              Headquarter
+              Headquarters
             </h3>
           </div>
           <div
@@ -75,28 +75,6 @@ export function Footer({
               className={`text-12 wide:text-14 opacity-50 uppercase ${Roboto.className}`}
             >
               Dallas, TX 75219
-            </p>
-          </div>
-        </div>
-        <div
-          className='col-span-5 wide:col-start-1 wide:col-span-6 space-y-1 grid grid-cols-5 wide:flex wide:flex-col'
-        >
-          <div
-            className='space-y-1 col-start-1 col-span-2'
-          >
-            <h3
-              className='text-14 wide:text-18'
-            >
-              Follow
-            </h3>
-          </div>
-          <div
-            className='col-start-3 col-span-3'
-          >
-            <p
-              className={`text-12 wide:text-14 opacity-50 uppercase ${Roboto.className}`}
-            >
-              LinkedIn
             </p>
           </div>
         </div>

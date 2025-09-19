@@ -80,7 +80,7 @@ input[type="search"]::-webkit-search-decoration {
   @media (max-width: 767px) {
     .slider-locations .slick-dots {
       top: auto !important;
-      bottom: 150px !important;
+      bottom: 185px !important;
     }
 
 }
@@ -105,12 +105,12 @@ input[type="search"]::-webkit-search-decoration {
   height: 1px !important;          
   width: 100% !important;       
   background-color: white; 
-  opacity: 0.3;
-  transition: opacity 0.3s ease;
+  opacity: 10 !important;
 }
 
 .slider-locations .slick-dots li.slick-active button:before {
   background-color: white !important; 
+  opacity: 10 !important;
 }
 
 .slider-images .slick-slide {
@@ -118,6 +118,6 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .slider-images button:hover {
-  opacity: 0.6 !important;
+  opacity: 10 !important;
   transition: all 300ms ease-in;
 }
