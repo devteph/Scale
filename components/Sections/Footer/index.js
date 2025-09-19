@@ -19,7 +19,7 @@ export function Footer({
  
   return (
     <div 
-      className="px-7.5 wide:px-10 pt-10 pb-20 wide:pt-20 wide:pb-10 grid grid-cols-5 wide:grid-cols-12 gap-7.5 wide:gap-10"
+      className="px-7.5 wide:px-10 pt-10 pb-28 wide:pt-20 wide:pb-10 grid grid-cols-5 wide:grid-cols-12 gap-7.5 wide:gap-10"
     >
       <div
         className='col-span-5 wide:col-start-1 wide:col-span-6 space-y-5 wide:space-y-10'
