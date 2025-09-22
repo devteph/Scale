@@ -60,7 +60,7 @@ const SliderLocations = forwardRef((props, ref) => {
         </div>
       </Slider>
       <div 
-        className='hidden wide:flex p-10 wide:absolute w-full h-full top-0 left-0 z-20 grid grid-cols-5 wide:grid-cols-12 gap-x-10'
+        className='hidden wide:grid p-10 wide:absolute w-full h-full top-0 left-0 z-20 grid-cols-5 wide:grid-cols-12 gap-x-10'
       >
         <div
           className='col-span-4 wide:col-span-6 space-y-10'

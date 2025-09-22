@@ -9,6 +9,8 @@ import Script from 'next/script';
 import localFont from 'next/font/local';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const Alliance = localFont({
     src: [
@@ -20,7 +22,21 @@ const Alliance = localFont({
     ],
   })
 
-function MyApp({ Component, pageProps }) {
+  function MyApp({ Component, pageProps }) {
+    const router = useRouter();
+  
+    useEffect(() => {
+      const handleRouteChange = () => {
+        // Esperamos un tick para que se monte todo
+        setTimeout(() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        }, 0);
+      };
+  
+      router.events.on("routeChangeComplete", handleRouteChange);
+      return () => router.events.off("routeChangeComplete", handleRouteChange);
+    }, [router.events]);
+
   return (
     <>
       <Script
@@ -46,3 +62,4 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+
