@@ -7,13 +7,13 @@ const Company = forwardRef((props, ref) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
       const viewportHeight = window.innerHeight;
       const isMobile = window.innerWidth < 768; // breakpoint mobile
 
       // Valores para desktop
-      const visibleStart = viewportHeight * 0.40; 
-      const visibleEnd = viewportHeight * 0.60;  
+      const visibleStart = viewportHeight * 0.40;
+      const visibleEnd = viewportHeight * 0.60;
       const center = viewportHeight * 0.5;
 
       wordsRef.current.forEach((el) => {
@@ -64,9 +64,11 @@ const Company = forwardRef((props, ref) => {
         }
 
         // Desktop: última línea visible al final del scroll
-        const lastParagraphEl = paragraphRefs.current[paragraphRefs.current.length - 1];
+        const lastParagraphEl =
+          paragraphRefs.current[paragraphRefs.current.length - 1];
         if (lastParagraphEl) {
-          const componentBottom = ref.current.offsetTop + ref.current.offsetHeight;
+          const componentBottom =
+            ref.current.offsetTop + ref.current.offsetHeight;
           if (scrollTop + viewportHeight >= componentBottom) {
             const lastParagraphWords = lastParagraphEl.querySelectorAll("span");
             lastParagraphWords.forEach((el) => {
@@ -79,10 +81,10 @@ const Company = forwardRef((props, ref) => {
       }
     };
 
-    document.body.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
 
-    return () => document.body.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [ref]);
 
   const paragraphs = [
@@ -90,7 +92,7 @@ const Company = forwardRef((props, ref) => {
     "Engineered for elite performance, security, reliability and massive scale.",
     "Keenly constructed and managed by talented experts.",
     "Future-built for rapid deployment, growth and cost limitations.",
-    "Purpose build for hyperscaled needs.",
+    "Purpose-build for hyperscaled needs.",
     "Positioned at the forefront of liquid cooling.",
   ];
 
@@ -101,6 +103,7 @@ const Company = forwardRef((props, ref) => {
       ref={ref}
       className="pt-14 wide:pt-0 wide:min-h-screen px-7.5 grid grid-cols-5 wide:grid-cols-12 gap-x-7.5 wide:gap-10"
     >
+      {/* Columna izquierda - Imagen */}
       <div className="wide:py-[20%] wide:sticky top-0 h-[22rem] wide:h-screen col-span-5 flex justify-center items-center">
         <Image
           src={"/assets/image1.svg"}
@@ -110,12 +113,16 @@ const Company = forwardRef((props, ref) => {
           className="object-cover w-full h-full relative"
         />
       </div>
+
+      {/* Columna derecha - Texto */}
       <div className="py-24 wide:py-[65%] wide:col-start-7 col-span-5 flex flex-col min-h-screen gap-y-28 wide:gap-y-20">
         {paragraphs.map((p, i) => (
           <p
             key={i}
             ref={(el) => (paragraphRefs.current[i] = el)}
-            className={`${i === 0 ? "wide:text-50" : "wide:text-30"} text-24 leading-snug`}
+            className={`${
+              i === 0 ? "wide:text-50" : "wide:text-30"
+            } text-24 leading-snug`}
           >
             {p.split(" ").map((word) => {
               const index = wordCounter++;

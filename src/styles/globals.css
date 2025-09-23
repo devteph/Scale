@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 html {
-  position: fixed;
-  height: 100%;
-  overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #0E0E0E;
@@ -13,8 +10,7 @@ html {
 
 body {
   width: 100vw; 
-  height: 100vh;
-  overflow-y: auto;
+  min-height: 100vh;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   font-family: 'Geist', sans-serif;
