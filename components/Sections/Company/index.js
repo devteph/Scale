@@ -92,7 +92,7 @@ const Company = forwardRef((props, ref) => {
     "Engineered for elite performance, security, reliability and massive scale.",
     "Keenly constructed and managed by talented experts.",
     "Future-built for rapid deployment, growth and cost limitations.",
-    "Purpose-build for hyperscaled needs.",
+    "Purpose-built for hyperscaled needs.",
     "Positioned at the forefront of liquid cooling.",
   ];
 
