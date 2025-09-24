@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero = forwardRef(({ variant = 'HeroPrimary', companyRef }, ref) => {
   const imageSrc =
-    variant === 'HeroPrimary' ? '/assets/hero.svg' : '/assets/hero2.svg';
+    variant === 'HeroPrimary' ? '/assets/OKC1-HERO.jpeg' : '/assets/hero.svg';
 
   const text =
     variant === 'HeroPrimary'
@@ -21,8 +21,7 @@ const Hero = forwardRef(({ variant = 'HeroPrimary', companyRef }, ref) => {
       <Image
         src={imageSrc}
         alt="Logo"
-        width={165}
-        height={30}
+        fill
         className="object-cover w-full h-full"
       />
 
